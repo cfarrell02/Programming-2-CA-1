@@ -1,0 +1,66 @@
+<object-stream>
+  <list>
+    <Country>
+      <name>Ireland</name>
+      <manager>Andy Farrell</manager>
+      <maxNumOfClubs>5</maxNumOfClubs>
+      <nationalPlayers>
+        <Player>
+          <name>Munster Player</name>
+          <email>m@p.com</email>
+          <phone>1</phone>
+        </Player>
+        <Player>
+          <name>Leinster Player</name>
+          <email>l@p.ie</email>
+          <phone>69</phone>
+        </Player>
+      </nationalPlayers>
+      <clubs>
+        <Club>
+          <name>Munster</name>
+          <headCoach>Munster Manager</headCoach>
+          <members>5000</members>
+          <players>
+            <Player reference="../../../../nationalPlayers/Player"/>
+            <Player>
+              <name>Munster Player 2</name>
+              <email>m@p2.ie</email>
+              <phone>69</phone>
+            </Player>
+          </players>
+        </Club>
+        <Club>
+          <name>Leinster </name>
+          <headCoach>L Coach</headCoach>
+          <members>5100</members>
+          <players>
+            <Player reference="../../../../nationalPlayers/Player[2]"/>
+          </players>
+        </Club>
+      </clubs>
+    </Country>
+    <Country>
+      <name>France</name>
+      <manager>French Manager</manager>
+      <maxNumOfClubs>20</maxNumOfClubs>
+      <nationalPlayers>
+        <Player>
+          <name>Rennes Player 1</name>
+          <email>r@p.com</email>
+          <phone>69</phone>
+        </Player>
+      </nationalPlayers>
+      <clubs>
+        <Club>
+          <name>Rennes</name>
+          <headCoach>Rennes Manager</headCoach>
+          <members>500</members>
+          <players>
+            <Player reference="../../../../nationalPlayers/Player"/>
+          </players>
+        </Club>
+      </clubs>
+    </Country>
+  </list>
+</object-stream>
